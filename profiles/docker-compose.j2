@@ -13,7 +13,7 @@ services:
       AIIDA_PATH: /app
       AIIDA_PROFILE: {{ aiida_profile }}
     volumes:
-     - '{{ repo_folder }}:/app/.aiida/repository-quicksetup'
-     - '{{ config_folder }}:/profiles'
+      - '{{ repo_folder }}:/app/.aiida/repository-quicksetup'
+      - '{{ config_folder }}:/profiles'
     ports:
       - '{{ port }}:80'
