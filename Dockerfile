@@ -18,7 +18,8 @@ COPY aiida_optimade ./aiida_optimade
 RUN pip install -e .
 
 # Copy AiiDA configuration
-COPY .docker/server_template.cfg ./server.cfg
+COPY mcloud ./mcloud
+COPY mcloud/server_template.cfg ./server.cfg
 COPY .docker/run.sh ./
 
 EXPOSE 80
